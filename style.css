@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    color: #210a0a;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 15px 60px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav .logo span {
+    color: #00bcd4;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: linear-gradient(120deg, #00bcd4, #1a237e);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+    animation: fadeDown 1.5s;
+}
+
+.hero h1 span {
+    color: #ffeb3b;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.hero button {
+    padding: 12px 30px;
+    border: none;
+    background: #ffeb3b;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: white;
+}
+
+/* Sections */
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.section.dark {
+    background: #111;
+    color: white;
+}
+
+/* Skills */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    background: #00bcd4;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    padding: 12px;
+    width: 100%;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Animations */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

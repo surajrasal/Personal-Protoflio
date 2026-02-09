@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suraj | Web Developer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo">Protfoli<span>.</span></div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <h1>Hi, I'm <span>Suraj</span></h1>
+    <p>Web Developer</p>
+    <button onclick="scrollToSection('contact')">Hire Me</button>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <p>
+            I am a passionate and dedicated web developer with a strong interest in creating modern, responsive, and user-friendly websites. 
+            I have hands-on experience with HTML, CSS, JavaScript, and basic UI/UX design using Figma.
+            I enjoy turning ideas into real-world digital solutions and continuously improving 
+            my skills by learning new technologies and best practices in web development
+        </p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section dark">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Java</div>
+        <div class="skill">Android</div>
+        <div class="skill">Figma</div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Animated personal portfolio using HTML, CSS & JS.</p>
+        </div>
+        <div class="project-card">
+            <h3>Android App</h3>
+            <p>Android app with intents, layouts and activities.</p>
+        </div>
+        <div class="project-card">
+            <h3>Java Application</h3>
+            <p>Collection framework and multithreading project.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section dark">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Suraj Rasal | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
